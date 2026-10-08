@@ -1,0 +1,15 @@
+FOTOS DAS RECEITAS
+
+Você pode colocar aqui as fotos das receitas.
+
+Exemplo:
+omelete.jpg
+pizza.jpg
+bolo-chocolate.jpg
+
+Depois abra frontend/js/recipes-data.js e, na receita correspondente, altere:
+
+image:'../assets/receitas/omelete.jpg',
+
+Dica: use nomes de arquivo simples, sem acentos e sem espaços.
+Exemplo: bolo-chocolate.jpg

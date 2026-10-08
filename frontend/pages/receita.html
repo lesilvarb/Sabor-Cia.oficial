@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     Sabor & Cia — arquivo HTML: receita.html
+     ============================================================
+     HTML monta a ESTRUTURA da página.
+     - <header> = topo/menu
+     - <main>   = conteúdo principal
+     - <section>= blocos de conteúdo
+     - <a>      = links
+     - <button> = botões
+     - <img>    = imagens
+     - class="..." conecta o HTML ao CSS
+     - data-... conecta o HTML ao JavaScript
+
+     Estes comentários não aparecem para quem usa o site.
+     ============================================================ -->
+
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="Risoto cremoso de cogumelos — receita completa do Sabor &amp; Cia." name="description"/>
+<title>Risoto cremoso de cogumelos — Sabor &amp; Cia</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg"/>
+<link rel="apple-touch-icon" href="../favicon.svg"/>
+<meta name="theme-color" content="#f8f2e8"/> 
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/><link href="../css/pages.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<a class="brand" href="../index.html"><img class="brand-logo" src="../assets/brand/sabor-cia-mark.svg" alt="" aria-hidden="true"/><span>Sabor <b>&amp;</b> Cia</span></a>
+<nav aria-label="Navegação principal" class="main-nav"><a href="../index.html">Início</a><a href="receitas.html">Receitas</a><a href="comunidade.html">Comunidade</a><a href="reels.html">Vídeos</a><a href="livros.html">Livros</a><a data-publish-link="" href="publicar.html">Publicar receita</a><a data-auth-required="" href="favoritos.html">Favoritos</a><a data-footer-accessibility="" href="#">Acessibilidade</a><a href="sobre.html">Sobre</a></nav>
+<div class="header-actions"><button aria-label="Alternar tema" class="icon-btn" data-theme="">◐</button><button aria-label="Abrir acessibilidade" class="icon-btn" data-accessibility="">Aa</button><a class="login-link" data-login-link="" data-account-name="" href="login.html">Entrar</a><a class="btn btn-primary btn-small" data-register-link="" href="cadastro.html">Criar conta</a><button aria-label="Abrir menu" class="menu-btn" data-menu="">☰</button></div>
+</header>
+<main class="recipe-detail">
+<div class="breadcrumb"><a href="receitas.html">Receitas</a><span>/</span><span>Massas &amp; risotos</span></div>
+<section class="detail-hero"><div class="detail-photo"><img alt="Risoto cremoso de cogumelos servido em prato branco" src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&amp;fit=crop&amp;w=1400&amp;q=90"/></div><div class="detail-intro"><span class="eyebrow">RECEITA DA CASA</span><h1>Risoto cremoso <em>de cogumelos</em></h1><p class="lead">Cremoso no ponto, com cogumelos bem dourados e parmesão. Uma receita para cozinhar devagar e comer sem pressa.</p><div class="author"><span class="author-avatar">M</span><div><strong>Marina Alves</strong><small>Compartilhou há 2 semanas</small></div></div><div class="detail-rating"><b>4,9</b><span>★★★★★</span><small>183 avaliações</small></div><div class="detail-actions"><button class="btn btn-primary" data-favorite="" data-recipe="risoto-cogumelos" type="button">♡</button><button class="outline-btn" data-share="" type="button">↗ Compartilhar receita</button></div></div></section>
+<section class="detail-info"><div><span>◷</span><strong>35 min</strong><small>tempo total</small></div><div><span>●</span><strong>Médio</strong><small>dificuldade</small></div><div><span>♨</span><strong>4 porções</strong><small>rendimento</small></div><div><span>♡</span><strong>2,4 mil</strong><small>salvos</small></div></section>
+<section class="cook-layout">
+<div class="ingredients"><span class="eyebrow">PARA COMEÇAR</span><h2>Ingredientes</h2><p class="helper">Marque o que já está separado.</p><label class="check"><input type="checkbox"/><span>2 xícaras de arroz arbóreo</span></label><label class="check"><input type="checkbox"/><span>250 g de cogumelos frescos</span></label><label class="check"><input type="checkbox"/><span>1 cebola pequena picada</span></label><label class="check"><input type="checkbox"/><span>1/2 xícara de vinho branco</span></label><label class="check"><input type="checkbox"/><span>1 litro de caldo de legumes</span></label><label class="check"><input type="checkbox"/><span>80 g de parmesão ralado</span></label><label class="check"><input type="checkbox"/><span>2 colheres de sopa de manteiga</span></label><label class="check"><input type="checkbox"/><span>Sal, pimenta e azeite</span></label>
+<div class="timer-box" data-seconds="2100" data-timer=""><span class="eyebrow">TIMER DA RECEITA</span><strong data-timer-display="">35:00</strong><small>Tempo da receita: 35 minutos.</small><div><button class="btn btn-primary btn-small" data-timer-start="" type="button">Iniciar</button></div></div>
+</div>
+<div class="steps"><div class="steps-head"><div><span class="eyebrow">AGORA, MÃO NA MASSA</span><h2>Modo de preparo</h2></div><div aria-label="Progresso" class="progress"><span style="width:0%"></span></div></div><article class="step"><span>01</span><div><h3>Doure os cogumelos</h3><p>Aqueça uma frigideira com azeite e doure os cogumelos em fogo alto. Tempere e reserve. O segredo é não mexer demais.</p><button class="step-done" type="button">✓ Concluir etapa</button></div></article><article class="step"><span>02</span><div><h3>Comece o risoto</h3><p>Na mesma panela, refogue a cebola na manteiga. Junte o arroz e mexa por 2 minutos até os grãos ficarem levemente translúcidos.</p><button class="step-done" type="button">✓ Concluir etapa</button></div></article><article class="step"><span>03</span><div><h3>Adicione o caldo</h3><p>Coloque o vinho e espere evaporar. Adicione o caldo quente aos poucos, mexendo até o arroz ficar al dente e cremoso.</p><button class="step-done" type="button">✓ Concluir etapa</button></div></article><article class="step"><span>04</span><div><h3>Finalize</h3><p>Desligue o fogo, misture os cogumelos, parmesão e manteiga. Ajuste o sal, tampe por 2 minutos e sirva.</p><button class="step-done" type="button">✓ Concluir etapa</button></div></article></div>
+</section>
+<section class="reels-section"><div class="section-head"><div><span class="eyebrow">VEJA O PREPARO</span><h2>Um minuto para <em>pegar o jeito.</em></h2><p>Vídeo curto, com reprodução local e controles, para acompanhar a técnica enquanto você cozinha.</p></div><a class="text-link" href="reels.html">Ver todos os vídeos →</a></div><div class="reels-row"><article class="reel-card" data-reel=""><video controls="" playsinline="" poster="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&amp;fit=crop&amp;w=700&amp;q=80" preload="metadata"><source src="../assets/reels/molho.mp4" type="video/mp4"/>Seu navegador não suporta vídeo.</video><button aria-label="Reproduzir vídeo" class="reel-play" data-reel-play="" type="button">▶</button><div class="reel-overlay"><strong>Risoto: técnica e finalização</strong><small>Marina · passo a passo</small></div></article></div></section>
+<section class="comment-box" data-speak="Você fez? Conta como ficou."><span class="eyebrow">CONTA PRA GENTE</span><h2>Você fez? <em>Conta como ficou.</em></h2><p>Seu comentário fica nesta receita e também aparece na comunidade.</p><form data-comment-form="" data-recipe="risoto-cogumelos" data-recipe-title="Risoto cremoso de cogumelos"><fieldset class="star-rating" data-star-rating><legend>Sua avaliação</legend><input type="hidden" name="rating" value="0"><div class="star-rating-buttons" role="radiogroup" aria-label="Sua avaliação"><button type="button" data-star-value="1" aria-label="1 estrela" aria-checked="false">★</button><button type="button" data-star-value="2" aria-label="2 estrelas" aria-checked="false">★</button><button type="button" data-star-value="3" aria-label="3 estrelas" aria-checked="false">★</button><button type="button" data-star-value="4" aria-label="4 estrelas" aria-checked="false">★</button><button type="button" data-star-value="5" aria-label="5 estrelas" aria-checked="false">★</button></div></fieldset><label for="comment-text">Seu comentário</label><textarea aria-label="Seu comentário" id="comment-text" maxlength="500" placeholder="Escreva sua experiência com essa receita..." required=""></textarea><div class="comment-form-footer"><small>Até 500 caracteres.</small><button class="btn btn-primary" type="submit">Publicar comentário</button></div></form></section>
+<section class="recipe-comments"><span class="eyebrow">O QUE A COMUNIDADE DISSE</span><h2>Comentários de quem <em>já fez.</em> <span data-comments-count="">(0)</span></h2><div aria-live="polite" class="comments-list" data-comments-list=""></div></section>
+</main>
+<script src="../js/recipes-data.js"></script>
+<script src="../js/app.js?v=11.1"></script>
+<footer class="footer" data-site-footer="">
+<div class="footer-top">
+<div>
+<a class="brand brand-footer" href="../index.html"><img class="brand-logo" src="../assets/brand/sabor-cia-mark.svg" alt="" aria-hidden="true"/><span>Sabor <b>&amp;</b> Cia</span></a>
+<p>Receitas que aproximam pessoas e fazem da cozinha um lugar de encontro.</p>
+</div>
+<div class="footer-links">
+<div><strong>Explorar</strong><a href="../pages/receitas.html">Receitas</a><a href="../pages/reels.html">Vídeos</a><a href="../pages/livros.html">Livros</a><a href="../pages/comunidade.html">Comunidade</a></div>
+<div><strong>Sabor &amp; Cia</strong><a href="../pages/sobre.html">Sobre nós</a><a href="../pages/contato.html">Contato</a><a href="../pages/privacidade.html">Privacidade</a><a href="../pages/termos.html">Termos de uso</a></div>
+<div><strong>Sua conta</strong><a href="../pages/login.html">Entrar</a><a href="../pages/cadastro.html">Criar conta</a><a href="../pages/favoritos.html">Favoritos</a><a href="publicar.html">Publicar receita</a><a href="../pages/perfil.html">Perfil</a></div>
+</div>
+</div>
+<div class="footer-bottom"><span>© 2026 Sabor &amp; Cia. Projeto acadêmico.</span><span>Acessibilidade • Libras • Leitura por voz</span></div>
+<div class="footer-representatives"><strong>Representantes:</strong> <span>Ana Letícia</span><span>Letícia da Silva</span><span>Kaio Requena</span><span>Mayara Macedo</span></div></footer><div class="toast" data-toast="" role="status"></div></body></html>

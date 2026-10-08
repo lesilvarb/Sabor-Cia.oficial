@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     Sabor & Cia — arquivo HTML: index.html
+     ============================================================
+     HTML monta a ESTRUTURA da página.
+     - <header> = topo/menu
+     - <main>   = conteúdo principal
+     - <section>= blocos de conteúdo
+     - <a>      = links
+     - <button> = botões
+     - <img>    = imagens
+     - class="..." conecta o HTML ao CSS
+     - data-... conecta o HTML ao JavaScript
+
+     Estes comentários não aparecem para quem usa o site.
+     ============================================================ -->
+
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover.0, viewport-fit=cover" name="viewport"/>
+<meta content="Sabor &amp; Cia — receitas para fazer, guardar e compartilhar." name="description"/>
+<title>Sabor &amp; Cia — Receitas que aproximam</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+<link rel="apple-touch-icon" href="favicon.svg"/>
+<meta name="theme-color" content="#f8f2e8"/> 
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- TOPO DO SITE: logo, menu, idioma, acessibilidade e conta -->
+<header class="site-header">
+<a aria-label="Sabor &amp; Cia, página inicial" class="brand" href="index.html">
+<img class="brand-logo" src="assets/brand/logo.jpeg" alt="" aria-hidden="true"/>
+<span>Sabor <b>&amp;</b> Cia</span>
+</a>
+<nav aria-label="Navegação principal" class="main-nav"><a class="active" href="index.html">Início</a><a href="pages/receitas.html">Receitas</a><a href="pages/comunidade.html">Comunidade</a><a href="pages/reels.html">Vídeos</a><a href="pages/livros.html">Livros</a><a data-publish-link="" href="pages/publicar.html">Publicar receita</a><a data-auth-required="" href="pages/favoritos.html">Favoritos</a><a data-footer-accessibility="" href="#">Acessibilidade</a><a href="pages/sobre.html">Sobre</a></nav>
+<div class="header-actions">
+<button aria-label="Alternar tema" class="icon-btn" data-theme="" title="Alternar tema">◐</button>
+<button aria-label="Abrir acessibilidade" class="icon-btn" data-accessibility="" title="Acessibilidade">Aa</button>
+<a class="login-link" data-login-link="" data-account-name="" href="pages/login.html">Entrar</a>
+<a class="btn btn-primary btn-small" data-register-link="" href="pages/cadastro.html">Criar conta</a>
+<button aria-label="Abrir menu" class="menu-btn" data-menu="">☰</button>
+</div>
+</header>
+<main>
+<!-- DESTAQUE INICIAL: título principal, busca e fotos -->
+<section class="hero">
+<div class="hero-copy">
+<span class="eyebrow">RECEITAS PARA VIVER BEM</span>
+<h1>Comida boa tem<br/><em>história.</em> Conte a sua.</h1>
+<p>Descubra receitas que dão vontade de cozinhar, encontre ideias com o que já existe na sua cozinha e compartilhe seus melhores sabores.</p>
+<form action="pages/receitas.html" class="search-box" data-allow-native>
+<span aria-hidden="true">⌕</span>
+<input aria-label="Pesquisar receitas" name="q" placeholder="Busque por prato, ingrediente ou sabor..."/>
+<button class="btn btn-dark" type="submit">Buscar</button>
+</form>
+<div class="quick-links">
+<span>Em alta:</span>
+<a href="pages/receitas.html?q=lasanha">lasanha</a>
+<a href="pages/receitas.html?q=bolo">bolo de chocolate</a>
+<a href="pages/receitas.html?q=massas">massas</a>
+</div>
+</div>
+<div class="hero-visual">
+<div class="hero-photo photo-main">
+<img alt="Prato colorido de comida caseira servido à mesa" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=1100&amp;q=88"/>
+</div>
+<a class="photo-note" href="pages/receita.html?id=moqueca-de-domingo" aria-label="Abrir receita da vez: Moqueca de domingo">
+<span class="mini-avatar">M</span>
+<div><strong>Receita da vez</strong><small>Moqueca de domingo</small></div>
+<span class="arrow">↗</span>
+</a>
+<div class="hero-photo photo-small">
+<img alt="Massa fresca com molho" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&amp;fit=crop&amp;w=600&amp;q=88"/>
+</div>
+<div class="floating-badge"><b>4,9</b><span>★</span><small>+ 2 mil avaliações</small></div>
+</div>
+</section>
+<section class="value-strip">
+<div><span class="value-icon">♡</span><strong>Guarde seus favoritos</strong><small>Tenha suas receitas por perto.</small></div>
+<div><span class="value-icon">⌁</span><strong>Cozinhe com a comunidade</strong><small>Troque ideias e experiências.</small></div>
+<div><span class="value-icon">⌂</span><strong>Use o que você tem</strong><small>Encontre receitas por ingredientes.</small></div>
+</section>
+<!-- RECEITAS EM DESTAQUE NA PÁGINA INICIAL -->
+<section class="section section-featured">
+<div class="section-head">
+<div><span class="eyebrow">ESCOLHAS DA CASA</span><h2>Receitas que merecem<br/><em>um lugar à mesa.</em></h2></div>
+<a class="text-link" href="pages/receitas.html">Ver todas <span>→</span></a>
+</div>
+<div class="recipe-grid">
+<article class="recipe-card recipe-card-large" data-recipe="risoto-cogumelos">
+<div class="recipe-image">
+<img alt="Risoto cremoso servido em prato branco" src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&amp;fit=crop&amp;w=1000&amp;q=88"/>
+<button aria-label="Salvar risoto de cogumelos" class="heart" data-favorite="" data-recipe="risoto-cogumelos">♡</button>
+<span class="tag">CONFORTO</span>
+</div>
+<div class="recipe-body">
+<div class="rating">★★★★★ <span>4,9 · 183 avaliações</span></div>
+<h3>Risoto cremoso de cogumelos</h3>
+<p>Arroz arborio, cogumelos dourados e parmesão. Cremoso no ponto, sem complicação.</p>
+<div class="recipe-meta"><span>◷ 35 min</span><span>● Médio</span><span>♡ 2,4k</span></div>
+</div>
+</article>
+<article class="recipe-card" data-recipe="pizza-frigideira">
+<div class="recipe-image">
+<img alt="Pizza artesanal com tomates e manjericão" src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/>
+<button aria-label="Salvar pizza de frigideira" class="heart" data-favorite="" data-recipe="pizza-frigideira">♡</button>
+<span class="tag">RÁPIDA</span>
+</div>
+<div class="recipe-body">
+<div class="rating">★★★★★ <span>4,8</span></div>
+<h3>Pizza de frigideira</h3>
+<p>Massa dourada, molho de tomate e muito queijo.</p>
+<div class="recipe-meta"><span>◷ 20 min</span><span>● Fácil</span></div>
+</div>
+</article>
+<article class="recipe-card" data-recipe="bolo-chocolate">
+<div class="recipe-image">
+<img alt="Bolo de chocolate com cobertura" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/>
+<button aria-label="Salvar bolo de chocolate" class="heart" data-favorite="" data-recipe="bolo-chocolate">♡</button>
+<span class="tag">DOCE</span>
+</div>
+<div class="recipe-body">
+<div class="rating">★★★★★ <span>4,9</span></div>
+<h3>Bolo de chocolate da família</h3>
+<p>Fofinho, intenso e com aquela cobertura que ninguém esquece.</p>
+<div class="recipe-meta"><span>◷ 50 min</span><span>● Fácil</span></div>
+</div>
+</article>
+</div>
+</section>
+<!-- O QUE TENHO EM CASA: seleção de ingredientes para procurar receitas -->
+<section class="ingredient-section">
+<div class="ingredient-copy">
+<span class="eyebrow">ABRA A GELADEIRA</span>
+<h2>O que tem por aí?<br/><em>A gente dá uma ideia.</em></h2>
+<p>Selecione alguns ingredientes que você já tem em casa e descubra receitas que fazem sentido para hoje.</p>
+<a class="btn btn-primary" href="pages/receitas.html">Encontrar receitas →</a>
+</div>
+<div class="ingredient-board" data-ingredient-finder="">
+<span class="ingredient-label">Tenho em casa</span>
+<div class="ingredient-search"><input aria-label="Adicionar ingrediente" data-ingredient-input="" placeholder="Digite um ingrediente (ex.: ovo)"/></div>
+<div class="ingredient-chips">
+<button class="ingredient-chip selected" data-ingredient="tomate">Tomate <b>×</b></button>
+<button class="ingredient-chip" data-ingredient="ovos">Ovos <b>+</b></button>
+<button class="ingredient-chip" data-ingredient="queijo">Queijo <b>+</b></button>
+<button class="ingredient-chip" data-ingredient="frango">Frango <b>+</b></button>
+<button class="ingredient-chip" data-ingredient="batata">Batata <b>+</b></button>
+<button class="ingredient-chip" data-ingredient="arroz">Arroz <b>+</b></button>
+<button class="ingredient-chip" data-ingredient="cebola">Cebola <b>+</b></button>
+<button class="ingredient-chip" data-ingredient="chocolate">Chocolate <b>+</b></button>
+</div>
+<div class="ingredient-result" data-ingredient-result=""><span>✦</span><div><strong>Selecione ingredientes</strong><small>e veja receitas que combinam com sua cozinha</small></div></div><a class="btn btn-primary" data-ingredient-go="" href="pages/receitas.html">Ver receitas com esses ingredientes</a>
+</div>
+</section>
+<!-- ÁREA DE VÍDEOS / REELS -->
+<section class="reels-section">
+<div class="section-head"><div><span class="eyebrow">VÍDEOS RÁPIDOS</span><h2>Veja, salve e <em>cozinhe.</em></h2><p>Clique e assista sem sair do site. O fundo fica borrado enquanto o vídeo está aberto.</p></div><a class="text-link" href="pages/reels.html">Ver os 21 vídeos →</a></div>
+<div class="reels-row">
+<button class="reel-card youtube-reel" type="button" data-youtube-id="p5GbdIPuZl4" data-reel-title="Ovos rápidos para o café da manhã" data-reel-format="video" aria-label="Assistir Ovos rápidos para o café da manhã sem sair do Sabor &amp; Cia">
+  <img src="https://img.youtube.com/vi/p5GbdIPuZl4/hqdefault.jpg" alt="Ovos rápidos para o café da manhã" loading="lazy"/>
+  <span class="reel-category">Café da manhã</span>
+  <span class="reel-play" aria-hidden="true">▶</span>
+  <div class="reel-overlay"><strong>Ovos rápidos para o café da manhã</strong><small>Assistir aqui no site</small></div>
+</button>
+<button class="reel-card youtube-reel" type="button" data-youtube-id="KmBUrPwkNRw" data-reel-title="Crepioca recheada rápida" data-reel-format="short" aria-label="Assistir Crepioca recheada rápida sem sair do Sabor &amp; Cia">
+  <img src="https://img.youtube.com/vi/KmBUrPwkNRw/hqdefault.jpg" alt="Crepioca recheada rápida" loading="lazy"/>
+  <span class="reel-category">Café da manhã</span>
+  <span class="reel-play" aria-hidden="true">▶</span>
+  <div class="reel-overlay"><strong>Crepioca recheada rápida</strong><small>Assistir aqui no site</small></div>
+</button>
+<button class="reel-card youtube-reel" type="button" data-youtube-id="YxdULvNWnUk" data-reel-title="Panqueca de banana com tapioca" data-reel-format="video" aria-label="Assistir Panqueca de banana com tapioca sem sair do Sabor &amp; Cia">
+  <img src="https://img.youtube.com/vi/YxdULvNWnUk/hqdefault.jpg" alt="Panqueca de banana com tapioca" loading="lazy"/>
+  <span class="reel-category">Café da manhã</span>
+  <span class="reel-play" aria-hidden="true">▶</span>
+  <div class="reel-overlay"><strong>Panqueca de banana com tapioca</strong><small>Assistir aqui no site</small></div>
+</button>
+<button class="reel-card youtube-reel" type="button" data-youtube-id="Qa5e9IbQxQ0" data-reel-title="Pão de queijo tradicional" data-reel-format="short" aria-label="Assistir Pão de queijo tradicional sem sair do Sabor &amp; Cia">
+  <img src="https://img.youtube.com/vi/Qa5e9IbQxQ0/hqdefault.jpg" alt="Pão de queijo tradicional" loading="lazy"/>
+  <span class="reel-category">Café da manhã</span>
+  <span class="reel-play" aria-hidden="true">▶</span>
+  <div class="reel-overlay"><strong>Pão de queijo tradicional</strong><small>Assistir aqui no site</small></div>
+</button>
+<button class="reel-card youtube-reel" type="button" data-youtube-id="7WRWTafb0oU" data-reel-title="Banana com queijo na frigideira" data-reel-format="video" aria-label="Assistir Banana com queijo na frigideira sem sair do Sabor &amp; Cia">
+  <img src="https://img.youtube.com/vi/7WRWTafb0oU/hqdefault.jpg" alt="Banana com queijo na frigideira" loading="lazy"/>
+  <span class="reel-category">Café da manhã</span>
+  <span class="reel-play" aria-hidden="true">▶</span>
+  <div class="reel-overlay"><strong>Banana com queijo na frigideira</strong><small>Assistir aqui no site</small></div>
+</button>
+<button class="reel-card youtube-reel" type="button" data-youtube-id="cRu3RJUqX_4" data-reel-title="Omelete simples e rápido" data-reel-format="video" aria-label="Assistir Omelete simples e rápido sem sair do Sabor &amp; Cia">
+  <img src="https://img.youtube.com/vi/cRu3RJUqX_4/hqdefault.jpg" alt="Omelete simples e rápido" loading="lazy"/>
+  <span class="reel-category">Café da manhã</span>
+  <span class="reel-play" aria-hidden="true">▶</span>
+  <div class="reel-overlay"><strong>Omelete simples e rápido</strong><small>Assistir aqui no site</small></div>
+</button>
+<button class="reel-card youtube-reel" type="button" data-youtube-id="3YMY8K5xQS4" data-reel-title="Bolinho de banana de frigideira" data-reel-format="video" aria-label="Assistir Bolinho de banana de frigideira sem sair do Sabor &amp; Cia">
+  <img src="https://img.youtube.com/vi/3YMY8K5xQS4/hqdefault.jpg" alt="Bolinho de banana de frigideira" loading="lazy"/>
+  <span class="reel-category">Café da manhã</span>
+  <span class="reel-play" aria-hidden="true">▶</span>
+  <div class="reel-overlay"><strong>Bolinho de banana de frigideira</strong><small>Assistir aqui no site</small></div>
+</button>
+</div>
+</section>
+<section class="section categories">
+<div class="section-head"><div><span class="eyebrow">PARA CADA MOMENTO</span><h2>Escolha o <em>clima.</em></h2></div></div>
+<div class="category-grid">
+<a class="category-card category-1" href="pages/receitas.html?categoria=rapidas"><img alt="" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>ATÉ 30 MIN</small><strong>Rápidas</strong></div></a>
+<a class="category-card category-2" href="pages/receitas.html?categoria=brasileiras"><img alt="" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>DE CASA</small><strong>Brasileiras</strong></div></a>
+<a class="category-card category-3" href="pages/receitas.html?categoria=doces"><img alt="" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>PARA ADOÇAR</small><strong>Doces</strong></div></a>
+<a class="category-card category-4" href="pages/receitas.html?categoria=massas"><img alt="" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>SEM PRESSA</small><strong>Massas</strong></div></a>
+<a class="category-card category-5" href="pages/receitas.html?categoria=saudaveis"><img alt="Saudáveis" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>LEVES</small><strong>Saudáveis</strong></div></a><a class="category-card category-6" href="pages/receitas.html?categoria=bolos"><img alt="Bolos" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>PARA ASSAR</small><strong>Bolos</strong></div></a><a class="category-card category-7" href="pages/receitas.html?categoria=lanches"><img alt="Lanches" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>A QUALQUER HORA</small><strong>Lanches</strong></div></a><a class="category-card category-8" href="pages/receitas.html?categoria=bebidas"><img alt="Bebidas" src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&amp;fit=crop&amp;w=900&amp;q=88"/><div><small>PARA REFRESCAR</small><strong>Bebidas</strong></div></a><a class="category-card category-9" data-auth-required="" href="pages/favoritos.html"><div class="category-fallback"><small>MINHA ESTANTE</small><strong>Favoritos</strong></div></a></div>
+</section>
+<section class="section home-books"><div class="section-head"><div><span class="eyebrow">ESTANTE DO SABOR</span><h2>Livros para <em>cozinhar.</em></h2><p>Seleções temáticas para encontrar novas ideias e guardar seus favoritos.</p></div><a class="text-link" href="pages/livros.html">Ver todos os livros →</a></div><div class="home-book-row"><a class="home-book" href="pages/livros.html"><strong>Sabores do Brasil</strong><span>Clássicos e receitas afetivas</span></a><a class="home-book" href="pages/livros.html"><strong>Até 30 minutos</strong><span>Para a rotina corrida</span></a><a class="home-book" href="pages/livros.html"><strong>Doces de domingo</strong><span>Bolos e sobremesas</span></a></div></section>
+<section class="community-call">
+<div class="community-art">
+<div class="avatar a1">J</div><div class="avatar a2">L</div><div class="avatar a3">C</div>
+<span class="scribble">feito por pessoas</span>
+</div>
+<div class="community-copy">
+<span class="eyebrow">SABOR TAMBÉM É COMPANHIA</span>
+<h2>Uma receita fica melhor quando alguém <em>compartilha.</em></h2>
+<p>Publique aquela receita que tem a sua cara. Receba comentários, avaliações e histórias de quem preparou.</p>
+<a class="btn btn-dark" href="pages/cadastro.html">Fazer parte da comunidade</a>
+</div>
+</section>
+</main>
+<script src="js/app.js"></script>
+<footer class="footer" data-site-footer="">
+<div class="footer-top">
+<div>
+<a class="brand brand-footer" href="index.html"><img class="Logotipo" src="assets/brand/logo.jpeg" alt="" aria-hidden="true"/><span>Sabor <b>&amp;</b> Cia</span></a>
+<p>Receitas que aproximam pessoas e fazem da cozinha um lugar de encontro.</p>
+</div>
+<div class="footer-links">
+<div><strong>Explorar</strong><a href="pages/receitas.html">Receitas</a><a href="pages/reels.html">Vídeos</a><a href="pages/livros.html">Livros</a><a data-publish-link="" href="pages/publicar.html">Publicar receita</a><a href="pages/comunidade.html">Comunidade</a></div>
+<div><strong>Sabor &amp; Cia</strong><a href="pages/sobre.html">Sobre nós</a><a href="pages/contato.html">Contato</a><a href="pages/privacidade.html">Privacidade</a><a href="pages/termos.html">Termos de uso</a></div>
+<div><strong>Sua conta</strong><a href="pages/login.html">Entrar</a><a href="pages/cadastro.html">Criar conta</a><a href="pages/favoritos.html">Favoritos</a><a href="pages/publicar.html">Publicar receita</a><a href="pages/perfil.html">Perfil</a></div>
+</div>
+</div>
+<div class="footer-bottom"><span>© 2026 Sabor &amp; Cia. Projeto acadêmico.</span><span>Acessibilidade • Libras • Leitura por voz</span></div>
+<div class="footer-representatives"><strong>Representantes:</strong> <span>Ana Letícia</span><span>Letícia da Silva</span><span>Kaio Requena</span><span>Mayara Macedo</span></div></footer><div class="toast" data-toast="" role="status"></div></body>
+</html>
