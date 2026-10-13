@@ -42,7 +42,7 @@ window.SABOR_BUILTIN_RECIPES = {
      Você pode usar este primeiro bloco como modelo para editar as demais. */
   'omelete-de-queijo': {
     title:'Omelete de queijo', category:'Café da manhã', categories:['cafe','lanches','economicas','rapidas','iniciantes'], type:'lanche', difficulty:'Fácil', minutes:10, servings:2, rating:'4,9', reviews:128,
-    image:'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1400&q=90',
+    image:'https://chatgpt.com/35e3051b-12c4-4080-b023-6335a3289164',
     description:'Omelete macio por dentro, dourado por fora e recheado com queijo derretido. Uma opção rápida para café da manhã ou lanche.',
     ingredients:[{q:3,u:'',i:'ovos'},{q:80,u:'g',i:'queijo muçarela ralado'},{q:0.25,u:'',i:'cebola pequena picada'},{q:1,u:'colher (sopa)',i:'leite'},{q:1,u:'colher (chá)',i:'manteiga'},{q:null,u:'',i:'sal, pimenta e cheiro-verde a gosto'}],
     steps:[{t:'Prepare os ovos',d:'Bata os ovos com o leite, sal e pimenta até a mistura ficar uniforme.',timer:60},{t:'Refogue a cebola',d:'Derreta a manteiga em fogo médio e refogue a cebola até ficar transparente.',timer:120},{t:'Cozinhe a omelete',d:'Despeje os ovos, abaixe o fogo e cozinhe até as bordas firmarem. Espalhe o queijo por cima.',timer:180},{t:'Dobre e sirva',d:'Dobre a omelete ao meio, espere o queijo derreter e finalize com cheiro-verde.',timer:60}]
