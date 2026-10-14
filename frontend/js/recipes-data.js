@@ -42,21 +42,21 @@ window.SABOR_BUILTIN_RECIPES = {
      Você pode usar este primeiro bloco como modelo para editar as demais. */
   'omelete-de-queijo': {
     title:'Omelete de queijo', category:'Café da manhã', categories:['cafe','lanches','economicas','rapidas','iniciantes'], type:'lanche', difficulty:'Fácil', minutes:10, servings:2, rating:'4,9', reviews:128,
-    image:'https://chatgpt.com/35e3051b-12c4-4080-b023-6335a3289164',
+    image:'../assets/receitas/omeletequeijo.png',
     description:'Omelete macio por dentro, dourado por fora e recheado com queijo derretido. Uma opção rápida para café da manhã ou lanche.',
     ingredients:[{q:3,u:'',i:'ovos'},{q:80,u:'g',i:'queijo muçarela ralado'},{q:0.25,u:'',i:'cebola pequena picada'},{q:1,u:'colher (sopa)',i:'leite'},{q:1,u:'colher (chá)',i:'manteiga'},{q:null,u:'',i:'sal, pimenta e cheiro-verde a gosto'}],
     steps:[{t:'Prepare os ovos',d:'Bata os ovos com o leite, sal e pimenta até a mistura ficar uniforme.',timer:60},{t:'Refogue a cebola',d:'Derreta a manteiga em fogo médio e refogue a cebola até ficar transparente.',timer:120},{t:'Cozinhe a omelete',d:'Despeje os ovos, abaixe o fogo e cozinhe até as bordas firmarem. Espalhe o queijo por cima.',timer:180},{t:'Dobre e sirva',d:'Dobre a omelete ao meio, espere o queijo derreter e finalize com cheiro-verde.',timer:60}]
   },
   'pizza-de-frigideira': {
     title:'Pizza de frigideira', category:'Massas', categories:['massas','lanches','economicas','rapidas','iniciantes'], type:'lanche', difficulty:'Fácil', minutes:15, servings:2, rating:'4,8', reviews:214,
-    image:'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&fit=crop&w=1400&q=90',
+    image:'../assets/receitas/pizzadefrigideira.png',
     description:'Massa rápida feita na frigideira, com molho de tomate, queijo derretido e acabamento de orégano.',
     ingredients:[{q:1,u:'xícara',i:'farinha de trigo'},{q:0.33,u:'xícara',i:'água'},{q:1,u:'colher (sopa)',i:'azeite'},{q:0.5,u:'colher (chá)',i:'fermento químico'},{q:0.25,u:'colher (chá)',i:'sal'},{q:4,u:'colheres (sopa)',i:'molho de tomate'},{q:120,u:'g',i:'muçarela'},{q:0.5,u:'',i:'tomate em rodelas'},{q:null,u:'',i:'orégano a gosto'}],
-    steps:[{t:'Faça a massa',d:'Misture farinha, sal, fermento, água e azeite até formar uma massa macia.',timer:120},{t:'Abra na frigideira',d:'Espalhe a massa em uma frigideira antiaderente untada e cozinhe em fogo baixo.',timer:180},{t:'Vire e recheie',d:'Vire a massa, passe o molho, adicione tomate e muçarela e polvilhe orégano.',timer:120},{t:'Derreta o queijo',d:'Tampe a frigideira e deixe em fogo baixo até o queijo derreter e a base dourar.',timer:180}]
+    steps:[{t:'Faça a massa',d:'Mistuarinha, sal, fermento, água e azeite até formar uma massa macia.',timer:120},{t:'Abra na frigideira',d:'Espalhe a massa em uma frigideira antiaderente untada e cozinhe em fogo baixo.',timer:180},{t:'Vire e recheie',d:'Vire a massa, passe o molho, adicione tomate e muçarela e polvilhe orégano.',timer:120},{t:'Derreta o queijo',d:'Tampe a frigideira e deixe em fogo baixo até o queijo derreter e a base dourar.',timer:180}]
   },
   'risoto-cremoso-de-cogumelos': {
     title:'Risoto cremoso de cogumelos', category:'Massas & risotos', categories:['massas','vegetarianas','jantar','iniciantes'], type:'principal', difficulty:'Médio', minutes:35, servings:4, rating:'4,9', reviews:183,
-    image:'https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=1400&q=90',
+    image:'../assets/receitas/risotodecogumelo.png',
     description:'Cremoso no ponto, com cogumelos bem dourados e parmesão. Uma receita para cozinhar devagar e comer sem pressa.',
     ingredients:[{q:2,u:'xícaras',i:'arroz arbóreo'},{q:250,u:'g',i:'cogumelos frescos fatiados'},{q:1,u:'',i:'cebola pequena picada'},{q:0.5,u:'xícara',i:'vinho branco seco'},{q:1,u:'litro',i:'caldo de legumes quente'},{q:80,u:'g',i:'parmesão ralado'},{q:2,u:'colheres (sopa)',i:'manteiga'},{q:1,u:'colher (sopa)',i:'azeite'},{q:null,u:'',i:'sal e pimenta a gosto'}],
     steps:[{t:'Doure os cogumelos',d:'Aqueça o azeite e doure os cogumelos em fogo alto. Tempere e reserve.',timer:300},{t:'Refogue a base',d:'Na mesma panela, derreta metade da manteiga e refogue a cebola até ficar macia.',timer:180},{t:'Toste o arroz',d:'Junte o arroz e mexa por cerca de 2 minutos. Adicione o vinho e espere evaporar.',timer:180},{t:'Adicione o caldo',d:'Coloque o caldo quente aos poucos, mexendo e esperando o líquido ser absorvido antes de adicionar mais.',timer:900},{t:'Finalize',d:'Desligue o fogo, misture cogumelos, parmesão e o restante da manteiga. Tampe e descanse antes de servir.',timer:120}]
@@ -397,6 +397,25 @@ window.SABOR_RECIPE_ALIASES = {
     const key=slug(spec.title);if(!catalog[key])catalog[key]=recipe;
   });
 
+  const fotosInfantis = {
+    'mini-pizza-colorida':'../assets/receitas/fotos/minipizzas.png',
+    'panquequinha-de-banana-com-carinhas':'../assets/receitas/fotos/panquequinha-de-banana-com-carinhas.png',
+    'sanduiche-estrelinha-de-queijo-e-tomate':'../assets/receitas/fotos/sanduiche-estrelinha-de-queijo-e-tomate.png',
+    'copinho-arco-iris-de-frutas':'../assets/receitas/fotos/copinho-arco-iris-de-frutas.png',
+    'biscoitinho-de-aveia-e-banana':'../assets/receitas/fotos/biscoitinho-de-aveia-e-banana.png',
+    'mini-hamburguer-caseiro-divertido':'../assets/receitas/fotos/mini-hamburguer-caseiro-divertido.png',
+    'barquinho-de-banana-com-frutas':'../assets/receitas/fotos/barquinho-de-banana-com-frutas.png',
+    'pao-de-queijo-mini':'../assets/receitas/fotos/pao-de-queijo-mini.png',
+    'vitamina-rosa-de-morango-e-banana':'../assets/receitas/fotos/vitamina-rosa-de-morango-e-banana.png',
+    'bolinho-de-cenoura-em-mini-forminhas':'../assets/receitas/fotos/bolinho-de-cenoura-em-mini-forminhas.png'
+  };
+  
+  Object.entries(fotosInfantis).forEach(([receita, foto])=>{
+    if(catalog[receita]){
+      catalog[receita].image=foto;
+    }
+  });
+
   // Garante exatamente 200 receitas embutidas sem apagar nenhuma receita anterior.
   const keys=Object.keys(catalog);
   if(keys.length>200){
@@ -506,8 +525,12 @@ window.SABOR_RECIPE_ALIASES = {
   Object.values(catalog).forEach(recipe=>{
     const group=groupFor(recipe);
     const pool=pools[group]||pools.meal;
-    recipe.image=photo(pool[stableIndex(recipe.title,pool.length)]);
-  });
+
+    // Só coloca uma foto automática se a receita ainda não tiver foto.
+    if (!recipe.image) {
+        recipe.image = photo(pool[stableIndex(recipe.title,pool.length)]);
+    }
+});
 })();
 
 /* Mantém todos os filtros de dificuldade úteis no catálogo. */
