@@ -63,14 +63,14 @@ window.SABOR_BUILTIN_RECIPES = {
   },
   'bolo-de-chocolate-da-familia': {
     title:'Bolo de chocolate da família', category:'Bolos', categories:['sobremesas','bolos','cafe','iniciantes'], type:'sobremesa', difficulty:'Fácil', minutes:50, servings:10, rating:'4,9', reviews:342,
-    image:'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1400&q=90',
+    image:'../assets/receitas/bolodechocolatedafamilia.png',
     description:'Bolo de chocolate fofinho com cobertura cremosa, simples de fazer e ótimo para dividir à mesa.',
     ingredients:[{q:3,u:'',i:'ovos'},{q:1.5,u:'xícara',i:'açúcar'},{q:0.75,u:'xícara',i:'óleo'},{q:1,u:'xícara',i:'leite morno'},{q:1,u:'xícara',i:'chocolate em pó'},{q:2,u:'xícaras',i:'farinha de trigo'},{q:1,u:'colher (sopa)',i:'fermento químico'},{q:1,u:'caixa',i:'creme de leite para a cobertura'},{q:150,u:'g',i:'chocolate meio amargo para a cobertura'}],
     steps:[{t:'Misture os líquidos',d:'Bata ovos, açúcar, óleo e leite até ficar uniforme.',timer:180},{t:'Junte os secos',d:'Acrescente chocolate e farinha aos poucos. Misture o fermento por último.',timer:180},{t:'Asse',d:'Leve a massa a uma forma untada e asse em forno preaquecido a 180 °C.',timer:2100},{t:'Faça a cobertura',d:'Derreta o chocolate com o creme de leite até formar um creme brilhante.',timer:240},{t:'Finalize',d:'Espere o bolo amornar, espalhe a cobertura e sirva.',timer:300}]
   },
   'pastel-crocante-de-feira': {
     title:'Pastel crocante de feira', category:'Salgados', categories:['salgados','lanches','brasileiras'], type:'lanche', difficulty:'Médio', minutes:45, servings:8, rating:'4,8', reviews:97,
-    image:'https://images.unsplash.com/photo-1626132647523-66f7bf0e6f9b?auto=format&fit=crop&w=1400&q=90',
+    image:'../assets/receitas/pastelcrocantedefeira.png',
     description:'Pastel com massa sequinha e recheio clássico de carne bem temperada, inspirado no pastel de feira.',
     ingredients:[{q:500,u:'g',i:'massa de pastel'},{q:350,u:'g',i:'carne moída'},{q:1,u:'',i:'cebola pequena picada'},{q:1,u:'',i:'tomate sem sementes picado'},{q:0.5,u:'xícara',i:'azeitonas picadas'},{q:null,u:'',i:'sal, pimenta e cheiro-verde a gosto'},{q:null,u:'',i:'óleo suficiente para fritar'}],
     steps:[{t:'Prepare o recheio',d:'Refogue cebola e carne até secar bem. Junte tomate, azeitona e temperos.',timer:600},{t:'Esfrie o recheio',d:'Espere o recheio esfriar completamente para a massa não umedecer.',timer:600},{t:'Monte os pastéis',d:'Distribua o recheio, dobre a massa e feche as bordas pressionando com um garfo.',timer:480},{t:'Frite',d:'Frite em óleo quente, poucos por vez, até ficarem dourados e crocantes.',timer:180}]
@@ -540,3 +540,263 @@ Object.values(window.SABOR_BUILTIN_RECIPES||{}).forEach(recipe=>{
   if(Number(recipe.minutes)>=50 && (cats.includes('bolos')||cats.includes('massas')||cats.includes('brasileiras'))) recipe.difficulty='Difícil';
   else if(Number(recipe.minutes)>=35) recipe.difficulty='Médio';
 });
+
+/* ============================================================
+   FOTOS PERSONALIZADAS — 200 RECEITAS
+   Edite SOMENTE o nome do arquivo da foto.
+   Se ainda não tiver a foto, deixe ''.
+   ============================================================ */
+
+   (function () {
+
+    // Faz funcionar dentro das páginas e também na página inicial.
+    const pastaFotos = location.pathname.includes('/pages/')
+      ? '../assets/receitas/'
+      : 'assets/receitas/';
+  
+    const fotosReceitas = {
+  
+      'omelete-de-queijo': '',
+      'pizza-de-frigideira': '',
+      'risoto-cremoso-de-cogumelos': '',
+      'bolo-de-chocolate-da-familia': '',
+      'pastel-crocante-de-feira': '',
+      'spaghetti-ao-molho-de-tomate': 'spaghettiaomolhodetomate.png',
+      'frango-com-batatas-douradas': 'frango-com-batatas-douradas.png',
+      'salada-crocante-da-horta': 'salada-crocante-da-horta.png',
+      'sopa-cremosa-de-legumes': 'sopa-cremosa-de-legumes.png',
+      'vitamina-de-banana-e-aveia': 'vitamina-de-banana-e-aveia.png',
+      'arroz-feijao-e-carne-acebolada': 'arroz-feijao-e-carne-acebolada.png',
+      'bolo-de-cenoura-com-chocolate': 'bolo-de-cenoura-com-chocolate.png',
+      'wrap-de-grao-de-bico': 'wrap-de-grao-de-bico.png',
+      'batata-crocante-na-airfryer': 'batata-crocante-na-airfryer.png',
+      'salada-de-folhas-e-queijo': 'salada-de-folhas-e-queijo.png',
+  
+      'panqueca-de-banana-e-aveia': 'panqueca-de-banana-e-aveia.png',
+      'cuscuz-com-ovo': 'cuscuz-com-ovo.png',
+      'tapioca-de-queijo-e-tomate': 'tapioca-de-queijo-e-tomate.png',
+      'pao-de-queijo-de-frigideira':  'pao-de-queijo-de-frigideira.png',
+      'overnight-oats-de-morango': 'overnight-oats-de-morango.png',
+      'iogurte-com-frutas-e-granola': 'iogurte-com-frutas-e-granola.png',
+      'crepioca-de-frango': 'crepioca-de-frango.png',
+      'torrada-integral-com-abacate': 'torrada-integral-com-abacate.png',
+      'frango-grelhado-com-arroz-e-legumes': 'frango-grelhado-com-arroz-e-legumes.png',
+      'carne-moida-com-batata': 'carne-moida-com-batata.png',
+      'picadinho-brasileiro': 'picadinho-brasileiro.png',
+      'escondidinho-de-frango': 'escondidinho-de-frango.png',
+      'arroz-carreteiro-rapido': 'arroz-carreteiro-rapido.png',
+      'file-de-peixe-com-limao': 'file-de-peixe-com-limao.png',
+      'strogonoff-de-frango': 'strogonoff-de-frango.png',
+      'feijao-tropeiro-simples': 'feijao-tropeiro-simples.png',
+  
+      'bolo-de-fuba-cremoso': 'bolo-de-fuba-cremoso.png',
+      'bolo-de-laranja': 'bolo-de-laranja.png',
+      'bolo-de-banana-com-canela': 'bolo-de-banana-com-canela.png',
+      'bolo-de-coco': 'bolo-de-coco.png',
+      'bolo-formigueiro': 'bolo-formigueiro.png',
+      'bolo-de-milho': 'bolo-de-milho.png',
+      'bolo-de-maca': 'bolo-de-maca.png',
+      'bolo-de-limao': 'bolo-de-limao.png',
+  
+      'salada-tropical-de-manga': 'salada-tropical-de-manga.png',
+      'salada-de-grao-de-bico': 'salada-de-grao-de-bico.png',
+      'salada-de-quinoa-com-legumes': 'salada-de-quinoa-com-legumes.png',
+      'salada-caprese': 'salada-caprese.png',
+      'salada-de-repolho-e-cenoura': 'salada-de-repolho-e-cenoura.png',
+      'salada-de-beterraba-e-laranja': 'salada-de-beterraba-e-laranja.png',
+      'salada-de-lentilha': 'salada-de-lentilha.png',
+      'salada-mediterranea': 'salada-mediterranea.png',
+  
+      'sopa-cremosa-de-abobora': 'sopa-cremosa-de-abobora.png',
+      'caldo-de-mandioquinha': 'caldo-de-mandioquinha.png',
+      'sopa-de-ervilha': 'sopa-de-ervilha.png',
+      'sopa-de-lentilha': 'sopa-de-lentilha.png',
+      'caldo-de-feijao': 'caldo-de-feijao.png',
+      'canja-de-galinha': 'canja-de-galinha.png',
+      'sopa-de-tomate-assado': 'sopa-de-tomate-assado.png',
+      'creme-de-milho': 'creme-de-milho.png',
+      'sopa-de-cebola': 'sopa-de-cebola.png',
+  
+      'suco-verde-refrescante': 'suco-verde-refrescante.png',
+      'limonada-com-hortela': 'limonada-com-hortela.png',
+      'cha-gelado-de-pessego': 'cha-gelado-de-pessego.png',
+      'smoothie-de-morango': 'smoothie-de-morango.png',
+      'smoothie-de-manga': 'smoothie-de-manga.png',
+      'cafe-gelado-cremoso': 'cafe-gelado-cremoso.png',
+      'chocolate-quente-simples': 'chocolate-quente-simples.png',
+      'suco-de-melancia-com-limao': 'suco-de-melancia-com-limao.png',
+      'agua-saborizada-citrica': 'agua-saborizada-citrica.png',
+  
+      'coxinha-da-asa-na-airfryer': 'coxinha-da-asa-na-airfryer.png',
+      'nuggets-caseiros-na-airfryer': 'nuggets-caseiros-na-airfryer.png',
+      'pao-de-alho-na-airfryer': 'pao-de-alho-na-airfryer.png',
+      'bolinho-de-arroz-na-airfryer': 'bolinho-de-arroz-na-airfryer.png',
+      'legumes-crocantes-na-airfryer': 'legumes-crocantes-na-airfryer.png',
+      'queijo-coalho-na-airfryer': 'queijo-coalho-na-airfryer.png',
+      'pastelzinho-na-airfryer': 'pastelzinho-na-airfryer.png',
+      'banana-com-canela-na-airfryer': 'banana-com-canela-na-airfryer.png',
+  
+      'penne-alho-e-oleo': 'penne-alho-e-oleo.png',
+      'macarrao-cremoso-de-frango': 'macarrao-cremoso-de-frango.png',
+      'fusilli-com-legumes': '',
+      'nhoque-ao-molho-de-tomate': '',
+      'lasanha-de-frigideira': '',
+      'macarrao-com-atum': '',
+      'talharim-com-cogumelos': '',
+  
+      'mingau-cremoso-de-aveia-e-maca': '',
+      'ovos-mexidos-com-tomate-e-ervas': '',
+      'pao-na-chapa-com-queijo-branco': '',
+      'tapioca-de-banana-e-canela': '',
+      'creme-de-mamao-com-aveia': '',
+      'cuscuz-com-queijo-coalho': ''
+      ,
+      'panqueca-de-cacau-e-banana': '',
+      'torrada-com-ricota-temperada': '',
+      'omelete-de-espinafre': '',
+      'bowl-de-iogurte-com-manga': '',
+  
+      'frango-ensopado-com-cenoura': '',
+      'bife-acebolado-com-arroz': '',
+      'arroz-de-forno-cremoso': '',
+      'lombo-suino-com-batatas': '',
+      'tilapia-assada-com-legumes': '',
+      'almondegas-ao-molho-caseiro': '',
+      'frango-xadrez-simples': '',
+      'carne-de-panela-com-mandioca': '',
+      'arroz-com-frango-de-uma-panela': '',
+      'panela-de-linguica-com-legumes': '',
+  
+      'pudim-de-leite-simples': '',
+      'mousse-de-maracuja-facil': '',
+      'brigadeiro-de-colher': '',
+      'cocada-cremosa': '',
+      'doce-de-banana-com-canela': '',
+      'torta-gelada-de-limao': '',
+      'pave-de-chocolate-pratico': '',
+      'arroz-doce-com-canela': '',
+      'curau-de-milho-cremoso': '',
+      'bolo-de-caneca-de-chocolate': '',
+  
+      'espaguete-com-almondegas': '',
+      'penne-ao-molho-rose': '',
+      'parafuso-com-frango-e-milho': '',
+      'macarrao-com-brocolis-e-alho': '',
+      'talharim-ao-molho-branco': '',
+      'macarrao-de-panela-de-pressao': '',
+      'ravioli-ao-molho-de-tomate': '',
+      'espaguete-com-abobrinha': '',
+      'penne-com-carne-moida': '',
+      'macarrao-gratinado-com-queijo': '',
+  
+      'torta-salgada-de-liquidificador': '',
+      'enroladinho-de-presunto-e-queijo': '',
+      'pao-recheado-de-frigideira': '',
+      'cachorro-quente-de-forno': '',
+      'mini-empada-de-frango': '',
+      'esfiha-aberta-de-carne': '',
+      'sanduiche-quente-de-forno': '',
+      'bolinho-de-milho-com-queijo': '',
+      'croquete-de-carne-assado': '',
+      'tostex-de-frango-cremoso': '',
+      'quiche-de-legumes-simples': '',
+  
+      'bowl-de-frango-e-quinoa': '',
+      'salada-de-pepino-com-iogurte': '',
+      'abobrinha-grelhada-com-ervas': '',
+      'ovos-cozidos-com-salada-colorida': '',
+      'batata-doce-com-frango-desfiado': '',
+      'arroz-integral-com-legumes': '',
+      'tabule-de-quinoa': '',
+      'salada-de-feijao-fradinho': '',
+      'wrap-integral-de-frango': '',
+      'bowl-de-atum-com-grao-de-bico': '',
+  
+      'galinhada-simples': '',
+      'vaca-atolada-pratica': '',
+      'arroz-tropeiro': '',
+      'frango-com-quiabo': '',
+      'moqueca-rapida-de-peixe': '',
+      'baiao-de-dois-simplificado': '',
+      'escondidinho-de-carne-moida': '',
+      'arroz-com-pequi-caseiro': '',
+      'carne-seca-com-abobora': '',
+      'virado-de-legumes-com-ovo': '',
+  
+      'hamburguer-de-lentilha': '',
+      'curry-de-grao-de-bico': '',
+      'tofu-grelhado-com-legumes': '',
+      'arroz-com-lentilha-e-cebola': '',
+      'abobora-assada-com-grao-de-bico': '',
+      'berinjela-recheada-com-quinoa': '',
+      'feijao-branco-com-tomate-e-ervas': '',
+      'macarrao-vegano-ao-pesto': '',
+      'pure-de-batata-com-cogumelos': '',
+      'bowl-de-feijao-preto-e-milho': '',
+  
+      'sopa-de-legumes-com-macarrao': '',
+      'caldo-verde-leve': '',
+      'creme-de-cenoura-com-gengibre': '',
+      'sopa-de-batata-com-alho-poro': '',
+      'caldo-de-abobora-com-frango': '',
+      'sopa-de-grao-de-bico': '',
+      'creme-de-ervilha-com-hortela': '',
+      'sopa-de-milho-com-frango': '',
+      'caldo-de-mandioca-com-carne': '',
+      'sopa-de-abobrinha-e-cenoura': '',
+  
+      'suco-de-abacaxi-com-hortela': '',
+      'suco-de-laranja-com-cenoura': '',
+      'smoothie-de-banana-e-cacau': '',
+      'cha-gelado-de-limao': '',
+      'suco-de-goiaba-cremoso': '',
+      'vitamina-de-mamao': '',
+      'limonada-suica-suave': '',
+      'suco-de-manga-com-maracuja': '',
+      'chocolate-gelado-cremoso': '',
+  
+      'batata-rustica-na-airfryer': '',
+      'frango-empanado-crocante-na-airfryer': '',
+      'abobrinha-empanada-na-airfryer': '',
+      'almondegas-na-airfryer': '',
+      'milho-temperado-na-airfryer': '',
+      'couve-flor-crocante-na-airfryer': '',
+      'linguica-acebolada-na-airfryer': '',
+      'batata-doce-chips-na-airfryer': '',
+      'pao-de-queijo-recheado-na-airfryer': '',
+      'file-de-peixe-na-airfryer': '',
+  
+      // RECEITAS INFANTIS
+  
+      'mini-pizza-colorida': '',
+      'panquequinha-de-banana-com-carinhas': '',
+      'sanduiche-estrelinha-de-queijo-e-tomate': '',
+      'copinho-arco-iris-de-frutas': '',
+      'biscoitinho-de-aveia-e-banana': '',
+      'mini-hamburguer-caseiro-divertido': '',
+      'barquinho-de-banana-com-frutas': '',
+      'pao-de-queijo-mini': '',
+      'vitamina-rosa-de-morango-e-banana': '',
+      'bolinho-de-cenoura-em-mini-forminhas': ''
+  
+    };
+  
+  
+    // Troca SOMENTE as fotos que você preencher acima.
+    // As que estiverem '' continuam com a foto antiga.
+    Object.entries(fotosReceitas).forEach(([nomeReceita, arquivo]) => {
+  
+      if (
+        arquivo &&
+        window.SABOR_BUILTIN_RECIPES[nomeReceita]
+      ) {
+  
+        window.SABOR_BUILTIN_RECIPES[nomeReceita].image =
+          pastaFotos + arquivo;
+  
+      }
+  
+    });
+  
+  })();
+
