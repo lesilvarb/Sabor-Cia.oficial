@@ -77,7 +77,7 @@ window.SABOR_BUILTIN_RECIPES = {
   },
   'spaghetti-ao-molho-de-tomate': {
     title:'Spaghetti ao molho de tomate', category:'Massas', categories:['massas','jantar','economicas','rapidas','iniciantes'], type:'principal', difficulty:'Fácil', minutes:25, servings:4, rating:'4,8', reviews:156,
-    image:'https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1400&q=90',
+    image:'../assets/receitas/Spaghetti-ao-molho-de-tomate.png',
     description:'Massa simples com molho de tomate caseiro, alho e ervas. Um jantar rápido e cheio de sabor.',
     ingredients:[{q:400,u:'g',i:'spaghetti'},{q:4,u:'',i:'tomates maduros picados'},{q:0.5,u:'',i:'cebola picada'},{q:2,u:'dentes',i:'alho picado'},{q:2,u:'colheres (sopa)',i:'azeite'},{q:null,u:'',i:'sal, pimenta e manjericão a gosto'},{q:40,u:'g',i:'parmesão para servir'}],
     steps:[{t:'Cozinhe a massa',d:'Cozinhe o spaghetti em água salgada até ficar al dente.',timer:600},{t:'Faça o molho',d:'Refogue cebola e alho no azeite, junte os tomates e tempere.',timer:600},{t:'Junte tudo',d:'Escorra a massa reservando um pouco da água do cozimento e misture ao molho.',timer:180},{t:'Finalize',d:'Ajuste a textura com água do cozimento e sirva com manjericão e parmesão.',timer:60}]
